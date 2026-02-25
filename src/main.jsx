@@ -1,9 +1,15 @@
-import { StrictMode } from 'react'
+import { StrictMode} from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
-import App from './App.jsx'
 import { RouterProvider } from 'react-router'
 import router from './router/router.jsx'
+import 'aos/dist/aos.css';
+import AOS from 'aos';
+
+AOS.init({
+  duration: 1200,
+  once: false,
+});
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>

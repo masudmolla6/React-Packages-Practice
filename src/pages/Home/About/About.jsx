@@ -1,7 +1,11 @@
+import Aos from "aos";
+import { useEffect } from "react";
+
 const About = () => {
+
   return (
     <div className="p-6">
-      <div className="max-w-5xl mx-auto px-6">
+      <div data-aos="fade-up" className="max-w-5xl mx-auto px-6">
 
         {/* Heading */}
         <div className="text-center pb-6">

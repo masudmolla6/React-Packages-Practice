@@ -1,3 +1,6 @@
+import Aos from "aos";
+import { useEffect } from "react";
+
 const categories = [
   { id: 1, name: "Electronics", items: 12 },
   { id: 2, name: "Fashion", items: 8 },
@@ -8,6 +11,7 @@ const categories = [
 ];
 
 const Categories = () => {
+
   return (
     <div className="py-20">
       <div className="max-w-6xl mx-auto px-6">
@@ -23,7 +27,7 @@ const Categories = () => {
         </div>
 
         {/* Categories Grid */}
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <div data-aos="fade-right" className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
 
           {categories.map((category) => (
             <div

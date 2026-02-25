@@ -1,4 +1,5 @@
-import { useState } from "react";
+import Aos from "aos";
+import { useEffect, useState } from "react";
 import toast, { Toaster } from "react-hot-toast";
 
 const Contact = () => {
@@ -40,7 +41,7 @@ const Contact = () => {
         </div>
 
         {/* Form Card */}
-        <div className="bg-gray-400 shadow-lg rounded-2xl p-8 md:p-12">
+        <div data-aos="fade-left" className="bg-gray-400 shadow-lg rounded-2xl p-8 md:p-12">
           <form onSubmit={handleSubmit} className="space-y-6">
 
             <div>
